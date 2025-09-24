@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>decorators &mdash; python tutorial 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=8d563738"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            python tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Basics</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">python tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">decorators</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for decorators</h1><div class="highlight"><pre>
+<span></span><span class="c1"># # Example : Simple Example of Decorators</span>
+<span class="c1"># def greetUser(func):</span>
+<span class="c1">#     def greet(time,name):</span>
+<span class="c1">#         func(name)</span>
+<span class="c1">#         print(f&quot;Good {time}&quot;)</span>
+<span class="c1">#     return greet</span>
+
+<span class="c1"># @greetUser</span>
+<span class="c1"># def turnOn(name):</span>
+<span class="c1">#     print(f&quot;Welcome Sir, {name}&quot;)</span>
+
+<span class="c1"># # With Arbitaray Keyword Arguments</span>
+<span class="c1"># def signIn(func):</span>
+<span class="c1">#     def credentials(**kwargs):</span>
+<span class="c1">#         if(kwargs[&quot;email&quot;] == &quot;abish&quot; and kwargs[&quot;password&quot;] == &quot;123&quot;):</span>
+<span class="c1">#             func()</span>
+<span class="c1">#         else:</span>
+<span class="c1">#             print(&quot;Failed to SignIn&quot;)</span>
+<span class="c1">#     return credentials</span>
+
+<span class="c1"># @signIn</span>
+<span class="c1"># def openApp():</span>
+<span class="c1">#     print(&quot;Welcome to Our App&quot;)</span>
+<span class="c1">#     turnOn(&quot;Morning&quot;,&quot;Abish&quot;)</span>
+
+
+
+<span class="c1"># # Example : args &amp; kwargs</span>
+<span class="c1"># def timer_wrapper(func):</span>
+<span class="c1">#     &quot;&quot;&quot;A wrapper function to time the execution of another function.&quot;&quot;&quot;</span>
+<span class="c1">#     import time</span>
+<span class="c1">#     def wrapper(*args, **kwargs):</span>
+<span class="c1">#         start_time = time.time()</span>
+<span class="c1">#         result = func(*args, **kwargs)</span>
+<span class="c1">#         end_time = time.time()</span>
+<span class="c1">#         print(f&quot;Function &#39;{func.__name__}&#39; executed in {end_time - start_time:.4f} seconds.&quot;)</span>
+<span class="c1">#         return result</span>
+<span class="c1">#     return wrapper</span>
+
+<span class="c1"># @timer_wrapper</span>
+<span class="c1"># def calculate_sum(n):</span>
+<span class="c1">#     &quot;&quot;&quot;Calculates the sum of numbers up to n.&quot;&quot;&quot;</span>
+<span class="c1">#     total = 0</span>
+<span class="c1">#     for i in range(n + 1):</span>
+<span class="c1">#         total += i</span>
+<span class="c1">#     return total</span>
+
+<span class="c1"># Example: Passing Arguments in Decorator Itself</span>
+<span class="c1"># def changecase(n):</span>
+<span class="c1">#   def changecase(func):</span>
+<span class="c1">#     def myinner():</span>
+<span class="c1">#       if n == 1:</span>
+<span class="c1">#         a = func().lower()</span>
+<span class="c1">#       else:</span>
+<span class="c1">#         a = func().upper()</span>
+<span class="c1">#       return a</span>
+<span class="c1">#     return myinner</span>
+<span class="c1">#   return changecase</span>
+
+<span class="c1"># @changecase(1)</span>
+<span class="c1"># def myfunction():</span>
+<span class="c1">#   return &quot;Hello Linus&quot;</span>
+
+<span class="c1"># Example: Many Decorators - Order Wise Execution</span>
+<span class="c1"># def changecase(func):</span>
+<span class="c1">#   def myinner():</span>
+<span class="c1">#     return func().upper()</span>
+<span class="c1">#   return myinner</span>
+
+<span class="c1"># def addgreeting(func):</span>
+<span class="c1">#   def myinner():</span>
+<span class="c1">#     return &quot;Hello &quot; + func() + &quot; Have a good day!&quot;</span>
+<span class="c1">#   return myinner</span>
+
+<span class="c1"># @changecase</span>
+<span class="c1"># @addgreeting</span>
+<span class="c1"># def myfunction():</span>
+<span class="c1">#   return &quot;Tobias&quot;</span>
+
+<span class="c1"># Example: Preserving Metadata of Original Functions</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">functools</span>
+
+<div class="viewcode-block" id="changecase">
+<a class="viewcode-back" href="../decorators.html#decorators.changecase">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">changecase</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+  <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span> <span class="c1"># Without this the original func is now reference to this inner() func</span>
+  <span class="k">def</span><span class="w"> </span><span class="nf">myinner</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">func</span><span class="p">()</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+  <span class="k">return</span> <span class="n">myinner</span></div>
+
+
+<div class="viewcode-block" id="myfunction">
+<a class="viewcode-back" href="../decorators.html#decorators.myfunction">[docs]</a>
+<span class="nd">@changecase</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunction</span><span class="p">():</span>
+  <span class="k">return</span> <span class="s2">&quot;Have a great day!&quot;</span></div>
+
+
+
+
+<div class="viewcode-block" id="main">
+<a class="viewcode-back" href="../decorators.html#decorators.main">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+    <span class="c1"># Without Syntactic Sugar @ keyword</span>
+    <span class="c1">#  # greetUser will take an function as an argument : name only, and will return an wrapper function object</span>
+    <span class="c1"># func = greetUser(turnOn)</span>
+    <span class="c1"># # This will be associated with greet function and as our outer argument function is calling inside it so here we will pass the argument</span>
+    <span class="c1"># func(&quot;Morning&quot;,&quot;Abish&quot;)</span>
+
+<span class="c1"># ---------------------------------------------------------------------</span>
+    <span class="c1"># With @ keyword == without logic but more readability</span>
+    <span class="c1"># turnOn = greetUser(turnOn)</span>
+    <span class="c1"># turnOn(time,name)</span>
+
+    <span class="c1"># openApp(email=&quot;abish&quot;,password=&quot;123&quot;)</span>
+    
+
+    <span class="c1"># When calculate_sum is called, it&#39;s actually the &#39;wrapper&#39; function that runs,</span>
+    <span class="c1"># which then calls the original calculate_sum and adds timing functionality.</span>
+    <span class="c1"># result = calculate_sum(1000000)</span>
+    <span class="c1"># print(f&quot;Sum: {result}&quot;)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">myfunction</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span></div>
+
+
+    
+
+
+
+
+<span class="c1"># Dunder Method that defines that if the program is run directly the first thing to execute is below this if statement in whole program</span>
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, baig.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+Basics
+======
+
+.. toctree::
+   :maxdepth: 4
+
+   abstract_methods
+   builtin_functions
+   casting
+   class_static_instance_methods
+   classes_objects
+   closures
+   context_managers
+   courotines_async
+   custom_package
+   datatypes
+   datetime_module
+   decorators
+   destructors
+   events_sync
+   exceptions_and_handlings
+   file_handling
+   filter_map_reduce
+   function_caching
+   functions
+   futures_aysnc
+   generators
+   inheritance
+   iter_next
+   json_module
+   lambda_funcs
+   match
+   multiprocessing_pool
+   multiprocessing_python
+   multithreading_python
+   mutex_locks
+   my_package
+   os_module
+   polymorphism
+   property_decorator
+   pycache_implementation
+   pycache_module
+   pydantic_tut
+   regex
+   requests_module
+   scopes
+   semaphores_sync
+   static_typing
+   ternary_operator
+   time_module

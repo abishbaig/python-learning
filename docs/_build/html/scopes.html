@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>scopes module &mdash; python tutorial 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="semaphores_sync module" href="semaphores_sync.html" />
+    <link rel="prev" title="requests_module module" href="requests_module.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            python tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Basics</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="abstract_methods.html">abstract_methods module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builtin_functions.html">builtin_functions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="casting.html">casting module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class_static_instance_methods.html">class_static_instance_methods module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes_objects.html">classes_objects module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="closures.html">closures module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="context_managers.html">context_managers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courotines_async.html">courotines_async module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_package.html">custom_package module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datatypes.html">datatypes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datetime_module.html">datetime_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="decorators.html">decorators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="destructors.html">destructors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events_sync.html">events_sync module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exceptions_and_handlings.html">exceptions_and_handlings module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_handling.html">file_handling module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filter_map_reduce.html">filter_map_reduce module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function_caching.html">function_caching module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html">functions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="futures_aysnc.html">futures_aysnc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generators.html">generators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inheritance.html">inheritance module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iter_next.html">iter_next module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json_module.html">json_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lambda_funcs.html">lambda_funcs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="match.html">match module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_pool.html">multiprocessing_pool module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_python.html">multiprocessing_python module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multithreading_python.html">multithreading_python module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mutex_locks.html">mutex_locks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="my_package.html">my_package package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os_module.html">os_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polymorphism.html">polymorphism module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="property_decorator.html">property_decorator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pycache_implementation.html">pycache_implementation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pycache_module.html">pycache_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pydantic_tut.html">pydantic_tut module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regex.html">regex module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requests_module.html">requests_module module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">scopes module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scopes.func1"><code class="docutils literal notranslate"><span class="pre">func1()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="semaphores_sync.html">semaphores_sync module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html">static_typing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ternary_operator.html">ternary_operator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="time_module.html">time_module module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">python tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Basics</a></li>
+      <li class="breadcrumb-item active">scopes module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/scopes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-scopes">
+<span id="scopes-module"></span><h1>scopes module<a class="headerlink" href="#module-scopes" title="Link to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="scopes.func1">
+<span class="sig-prename descclassname"><span class="pre">scopes.</span></span><span class="sig-name descname"><span class="pre">func1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scopes.html#func1"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scopes.func1" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="requests_module.html" class="btn btn-neutral float-left" title="requests_module module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="semaphores_sync.html" class="btn btn-neutral float-right" title="semaphores_sync module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, baig.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

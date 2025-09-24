@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basics &mdash; python tutorial 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=8d563738"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="abstract_methods module" href="abstract_methods.html" />
+    <link rel="prev" title="python tutorial documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            python tutorial
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="abstract_methods.html">abstract_methods module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="builtin_functions.html">builtin_functions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="casting.html">casting module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="class_static_instance_methods.html">class_static_instance_methods module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classes_objects.html">classes_objects module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="closures.html">closures module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="context_managers.html">context_managers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="courotines_async.html">courotines_async module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custom_package.html">custom_package module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datatypes.html">datatypes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="datetime_module.html">datetime_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="decorators.html">decorators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="destructors.html">destructors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="events_sync.html">events_sync module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exceptions_and_handlings.html">exceptions_and_handlings module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_handling.html">file_handling module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filter_map_reduce.html">filter_map_reduce module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="function_caching.html">function_caching module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions.html">functions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="futures_aysnc.html">futures_aysnc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="generators.html">generators module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inheritance.html">inheritance module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iter_next.html">iter_next module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json_module.html">json_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lambda_funcs.html">lambda_funcs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="match.html">match module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_pool.html">multiprocessing_pool module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_python.html">multiprocessing_python module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="multithreading_python.html">multithreading_python module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mutex_locks.html">mutex_locks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="my_package.html">my_package package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="os_module.html">os_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="polymorphism.html">polymorphism module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="property_decorator.html">property_decorator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pycache_implementation.html">pycache_implementation module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pycache_module.html">pycache_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pydantic_tut.html">pydantic_tut module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="regex.html">regex module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="requests_module.html">requests_module module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scopes.html">scopes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="semaphores_sync.html">semaphores_sync module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html">static_typing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ternary_operator.html">ternary_operator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="time_module.html">time_module module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">python tutorial</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Basics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="basics">
+<h1>Basics<a class="headerlink" href="#basics" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="abstract_methods.html">abstract_methods module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="abstract_methods.html#abstract_methods.Circle"><code class="docutils literal notranslate"><span class="pre">Circle</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abstract_methods.html#abstract_methods.Circle.area"><code class="docutils literal notranslate"><span class="pre">Circle.area()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abstract_methods.html#abstract_methods.Shape"><code class="docutils literal notranslate"><span class="pre">Shape</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abstract_methods.html#abstract_methods.Shape.area"><code class="docutils literal notranslate"><span class="pre">Shape.area()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="builtin_functions.html">builtin_functions module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="casting.html">casting module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="class_static_instance_methods.html">class_static_instance_methods module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="class_static_instance_methods.html#class_static_instance_methods.Example"><code class="docutils literal notranslate"><span class="pre">Example</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="class_static_instance_methods.html#class_static_instance_methods.Example.class_method"><code class="docutils literal notranslate"><span class="pre">Example.class_method()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="class_static_instance_methods.html#class_static_instance_methods.Example.count"><code class="docutils literal notranslate"><span class="pre">Example.count</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="class_static_instance_methods.html#class_static_instance_methods.Example.instance_method"><code class="docutils literal notranslate"><span class="pre">Example.instance_method()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="class_static_instance_methods.html#class_static_instance_methods.Example.static_method"><code class="docutils literal notranslate"><span class="pre">Example.static_method()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="classes_objects.html">classes_objects module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classes_objects.html#classes_objects.Person"><code class="docutils literal notranslate"><span class="pre">Person</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classes_objects.html#classes_objects.Person.info"><code class="docutils literal notranslate"><span class="pre">Person.info()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classes_objects.html#classes_objects.Person.setAge"><code class="docutils literal notranslate"><span class="pre">Person.setAge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="classes_objects.html#classes_objects.Person.setName"><code class="docutils literal notranslate"><span class="pre">Person.setName()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="closures.html">closures module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="closures.html#closures.greetUser"><code class="docutils literal notranslate"><span class="pre">greetUser()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="closures.html#closures.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="context_managers.html">context_managers module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="context_managers.html#context_managers.managed_resource"><code class="docutils literal notranslate"><span class="pre">managed_resource()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="courotines_async.html">courotines_async module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="courotines_async.html#courotines_async.fetchData"><code class="docutils literal notranslate"><span class="pre">fetchData()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="courotines_async.html#courotines_async.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="custom_package.html">custom_package module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datatypes.html">datatypes module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datetime_module.html">datetime_module module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="decorators.html">decorators module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="decorators.html#decorators.changecase"><code class="docutils literal notranslate"><span class="pre">changecase()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="decorators.html#decorators.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="decorators.html#decorators.myfunction"><code class="docutils literal notranslate"><span class="pre">myfunction()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="destructors.html">destructors module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="destructors.html#destructors.Person"><code class="docutils literal notranslate"><span class="pre">Person</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="events_sync.html">events_sync module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="events_sync.html#events_sync.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="events_sync.html#events_sync.setter"><code class="docutils literal notranslate"><span class="pre">setter()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="events_sync.html#events_sync.waiter"><code class="docutils literal notranslate"><span class="pre">waiter()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="exceptions_and_handlings.html">exceptions_and_handlings module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="file_handling.html">file_handling module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filter_map_reduce.html">filter_map_reduce module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_caching.html">function_caching module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_caching.html#function_caching.printNum"><code class="docutils literal notranslate"><span class="pre">printNum()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">functions module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions.html#functions.my_function"><code class="docutils literal notranslate"><span class="pre">my_function()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="futures_aysnc.html">futures_aysnc module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="futures_aysnc.html#futures_aysnc.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="futures_aysnc.html#futures_aysnc.set_future_result"><code class="docutils literal notranslate"><span class="pre">set_future_result()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generators.html">generators module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generators.html#generators.myGeneratorFunc"><code class="docutils literal notranslate"><span class="pre">myGeneratorFunc()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="inheritance.html">inheritance module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="inheritance.html#inheritance.Person"><code class="docutils literal notranslate"><span class="pre">Person</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inheritance.html#inheritance.Person.hello"><code class="docutils literal notranslate"><span class="pre">Person.hello()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="inheritance.html#inheritance.Person.name"><code class="docutils literal notranslate"><span class="pre">Person.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="inheritance.html#inheritance.Student"><code class="docutils literal notranslate"><span class="pre">Student</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="inheritance.html#inheritance.Student.name"><code class="docutils literal notranslate"><span class="pre">Student.name()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="iter_next.html">iter_next module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="json_module.html">json_module module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lambda_funcs.html">lambda_funcs module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lambda_funcs.html#lambda_funcs.power"><code class="docutils literal notranslate"><span class="pre">power()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lambda_funcs.html#lambda_funcs.power_gen"><code class="docutils literal notranslate"><span class="pre">power_gen()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lambda_funcs.html#lambda_funcs.square"><code class="docutils literal notranslate"><span class="pre">square()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="match.html">match module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multiprocessing_pool.html">multiprocessing_pool module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_pool.html#multiprocessing_pool.f"><code class="docutils literal notranslate"><span class="pre">f()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="multiprocessing_python.html">multiprocessing_python module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_python.html#multiprocessing_python.depositMoney"><code class="docutils literal notranslate"><span class="pre">depositMoney()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_python.html#multiprocessing_python.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="multiprocessing_python.html#multiprocessing_python.withdrawMoney"><code class="docutils literal notranslate"><span class="pre">withdrawMoney()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="multithreading_python.html">multithreading_python module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="multithreading_python.html#multithreading_python.cubes"><code class="docutils literal notranslate"><span class="pre">cubes()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="multithreading_python.html#multithreading_python.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="multithreading_python.html#multithreading_python.squares"><code class="docutils literal notranslate"><span class="pre">squares()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mutex_locks.html">mutex_locks module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mutex_locks.html#mutex_locks.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="mutex_locks.html#mutex_locks.worker"><code class="docutils literal notranslate"><span class="pre">worker()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="my_package.html">my_package package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="my_package.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="my_package.html#module-my_package.greetings">my_package.greetings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="my_package.html#my_package.greetings.greetUser"><code class="docutils literal notranslate"><span class="pre">greetUser()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="my_package.html#module-my_package">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="os_module.html">os_module module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polymorphism.html">polymorphism module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="polymorphism.html#polymorphism.Order"><code class="docutils literal notranslate"><span class="pre">Order</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="property_decorator.html">property_decorator module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="property_decorator.html#property_decorator.Student"><code class="docutils literal notranslate"><span class="pre">Student</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="property_decorator.html#property_decorator.Student.score"><code class="docutils literal notranslate"><span class="pre">Student.score</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pycache_implementation.html">pycache_implementation module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pycache_module.html">pycache_module module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pycache_module.html#pycache_module.greetUser"><code class="docutils literal notranslate"><span class="pre">greetUser()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pydantic_tut.html">pydantic_tut module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Address"><code class="docutils literal notranslate"><span class="pre">Address</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Address.city"><code class="docutils literal notranslate"><span class="pre">Address.city</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Address.country"><code class="docutils literal notranslate"><span class="pre">Address.country</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Address.model_config"><code class="docutils literal notranslate"><span class="pre">Address.model_config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Address.pin_code"><code class="docutils literal notranslate"><span class="pre">Address.pin_code</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Address.validate_pinCode"><code class="docutils literal notranslate"><span class="pre">Address.validate_pinCode()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient"><code class="docutils literal notranslate"><span class="pre">Patient</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.address"><code class="docutils literal notranslate"><span class="pre">Patient.address</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.age"><code class="docutils literal notranslate"><span class="pre">Patient.age</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.allergies"><code class="docutils literal notranslate"><span class="pre">Patient.allergies</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.bmi"><code class="docutils literal notranslate"><span class="pre">Patient.bmi</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.check_emergency_contact"><code class="docutils literal notranslate"><span class="pre">Patient.check_emergency_contact()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.contacts"><code class="docutils literal notranslate"><span class="pre">Patient.contacts</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.email"><code class="docutils literal notranslate"><span class="pre">Patient.email</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.height"><code class="docutils literal notranslate"><span class="pre">Patient.height</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.model_config"><code class="docutils literal notranslate"><span class="pre">Patient.model_config</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.name"><code class="docutils literal notranslate"><span class="pre">Patient.name</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.transform_name"><code class="docutils literal notranslate"><span class="pre">Patient.transform_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.validate_email"><code class="docutils literal notranslate"><span class="pre">Patient.validate_email()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.Patient.weight"><code class="docutils literal notranslate"><span class="pre">Patient.weight</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pydantic_tut.html#pydantic_tut.insert_patient"><code class="docutils literal notranslate"><span class="pre">insert_patient()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="regex.html">regex module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requests_module.html">requests_module module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scopes.html">scopes module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scopes.html#scopes.func1"><code class="docutils literal notranslate"><span class="pre">func1()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="semaphores_sync.html">semaphores_sync module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="semaphores_sync.html#semaphores_sync.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="semaphores_sync.html#semaphores_sync.worker"><code class="docutils literal notranslate"><span class="pre">worker()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="static_typing.html">static_typing module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html#static_typing.addNums"><code class="docutils literal notranslate"><span class="pre">addNums()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html#static_typing.add_nums"><code class="docutils literal notranslate"><span class="pre">add_nums()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html#static_typing.func"><code class="docutils literal notranslate"><span class="pre">func()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html#static_typing.funcVar"><code class="docutils literal notranslate"><span class="pre">funcVar()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html#static_typing.genericType"><code class="docutils literal notranslate"><span class="pre">genericType()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html#static_typing.myFunc"><code class="docutils literal notranslate"><span class="pre">myFunc()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="static_typing.html#static_typing.myFuncCall"><code class="docutils literal notranslate"><span class="pre">myFuncCall()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ternary_operator.html">ternary_operator module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="time_module.html">time_module module</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="python tutorial documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="abstract_methods.html" class="btn btn-neutral float-right" title="abstract_methods module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, baig.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
